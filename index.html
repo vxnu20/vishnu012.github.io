@@ -1,100 +1,187 @@
 <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" integrity="sha384-IJLmUY0f1ePPX6uSCJ9Bxik64/meJmjSYD7dHaJqTXXEBE4y+Oe9P2KBZa/z7p0Q" crossorigin="anonymous">
-    
-    <style type="text/css">@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-      html{scroll-behavior:smooth}
-      body{font-family:"Jost",sans-serif;display:flex;flex-direction:column;min-height:100vh}{filter:invert(1) hue-rotate(180deg)}
-      section{flex:1}{filter:invert(1) hue-rotate(180deg)}
-    </style>
-    <title> Vishnu | വിഷ്ണു</title>
-    </head>
-    <body class="has-background-white">
-    
-      <section class="section">
-        <div class="container">
-          <div class="has-text-centered">
-            <h1 class="title is-2">VISHNU</h1>
-            
-            <figure class="image is-flex is-justify-content-center is-align-items-center">
-              <img class="is-rounded" src="images/avatar.jpeg" style="max-width: 192px" />
-            </figure>
-            
-          <p>
-            <a href="https://github.com/vishnu012" target="_blank">
-              <span class="icon is-large" title="GitHub">
-                <i class="fab fa-github fa-lg"></i>
-              </span>
-            </a>
-          
-            <a href="https://www.linkedin.com/in/vishnu-u-b16280228" target="_blank">
-              <span class="icon is-large" title="LinkedIn">
-                <i class="fab fa-linkedin fa-lg"></i>
-              </span>
-            </a>
+<html lang="en">
 
-            <!-- <a href="https://twitter.com/Vishn012" target="_blank">
-              <span class="icon is-large" title="Twitter">
-                <i class="fab fa-twitter fa-lg"></i>
-              </span>
-            </a>
-          
-            <a href="https://www.instagram.com/_vis.nu/" target="_blank">
-              <span class="icon is-large" title="Instagram">
-                <i class="fab fa-instagram fa-lg"></i>
-              </span>
-            </a> -->
-          
-            <a href="https://t.me/vishnu012" target="_blank">
-              <span class="icon is-large" title="Telegram">
-                <i class="fab fa-telegram fa-lg"></i>
-              </span>
-            </a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-            <a href="https://discord.com/users/693633507418832927" target="_blank">
-              <span class="icon is-large" title="Discord">
-                <i class="fab fa-discord fa-lg"></i>
-              </span>
-            </a>
+  <title>Vishnu</title>
 
-            <a href="mailto:vishnu012@pm.me" target="_blank">
-              <span class="icon is-large" title="Email">
-                <i class="far fa-envelope fa-lg"></i>
-              </span>
-            </a>
-          </p><br><br>
-            <p class="subtitle is-4">A tech fanatic with a hunger for knowledge in the ever-growing field of science and technology.</p>
-            <a href="https://www.dropbox.com/s/1z52mt1liinnwqn/VISHNU_U.pdf?dl=0" target="_blank"><button class="button is-link is-rounded">My Resume</button></a>
-            <a href="./blog/index.html"><button class="button is-link is-rounded"> All Posts</button></a>
-          </div>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-        </div>
+  <style>
+    :root {
+      --bg: #fafafa;
+      --text: #111;
+      --muted: #666;
+      --border: #ddd;
+      --link: #0057cc;
+    }
 
-      </section>
-      <footer class="footer py-4">
-        <div class="content has-text-centered">
-          <p>
-            Built with
-            <span class="icon-text">
-              <span class="icon">
-                <i class="fas fa-code"></i>
-              </span>
-              <!-- <span>code</span> -->
-            </span>
-            and
-            <span class="icon-text">
-              <span class="icon">
-                <i class="fas fa-heart"></i>
-              </span>
-              <!-- <span>love</span> -->
-            </span>
-          </p>
-        </div>
-      </footer>    
-    </body>
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111;
+        --text: #ececec;
+        --muted: #8d8d8d;
+        --border: #2b2b2b;
+        --link: #6ea8ff;
+      }
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.7 SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 24px 28px 40px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 1.25rem;
+    }
+
+    section {
+      margin-bottom: 1.75rem;
+    }
+
+    h2 {
+      font-size: .95rem;
+      font-weight: 600;
+      color: var(--muted);
+      margin-bottom: .9rem;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+
+    p {
+      max-width: 60ch;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 1.5rem 0;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    li {
+      margin-bottom: 1.5rem;
+    }
+
+    .small {
+      display: block;
+      color: var(--muted);
+      font-size: .9rem;
+      margin-bottom: .25rem;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: underline;
+      text-decoration-color: var(--border);
+      text-underline-offset: 3px;
+    }
+
+    a:hover {
+      color: var(--link);
+      text-decoration-color: var(--link);
+    }
+
+    i {
+      width: 20px;
+      margin-right: 8px;
+      color: var(--muted);
+    }
+
+    footer {
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    @media (max-width:600px) {
+      body {
+        font-size: 15px;
+      }
+
+      main {
+        padding: 20px 24px 32px;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+
+    <h1>Vishnu Udayan</h1>
+
+    <section>
+      <p>
+        Just another corporate guy in his 20s, Genuinely curious about everything—except my own
+        life choices.
+      </p>
+    </section>
+
+    <hr>
+
+    <section>
+
+      <h2>Links</h2>
+
+      <ul>
+
+        <li>
+          <span class="small">Personal inbox</span>
+          <a href="mailto:vishnu012@pm.me">
+            <i class="fa-regular fa-envelope"></i>
+            vishnu012@pm.me
+          </a>
+        </li>
+
+        <!--
+            <li>
+                <span class="small">Projects</span>
+                <a href="https://github.com/vxnu20" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                    github.com/vxnu20
+                </a>
+            </li>
+
+            <li>
+                <span class="small">Professional network</span>
+                <a href="https://www.linkedin.com/in/vishnuudayan123" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                    linkedin.com/in/vishnuudayan123
+                </a>
+            </li>
+            -->
+
+      </ul>
+
+    </section>
+
+  </main>
+
+</body>
 
 </html>
